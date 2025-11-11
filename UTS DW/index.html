@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Responsive Site - Lab</title>
+    <link rel="stylesheet" href="style.css" />
+
+<body>
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo">MOR11</h1>
+            <!-- Theme toggle -->
+            <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
+            <nav>
+                <ul id="nav-links" class="nav-links">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#portfolio">portofolio</a></li>
+                    <li><a href="#testimonials">Review</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="nav-links">☰</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="home-section">
+            <img class="hero-photo" src="foto/WhatsApp Image 2025-11-01 at 21.24.38_bb035d42.jpg" alt="Foto latar sambutan" />
+            <div class="container hero-content">
+                <div class="home-content">
+                    <h2>Selamat Datang di MORsk11.tech</h2>
+                    <a href="#skills" class="btn">Keahlian</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <div class="container">
+                <h2>Tentang Saya</h2>
+                <p class="about-summary">
+                    Saya seorang teknisi IT yang berfokus pada perawatan dan pemasangan sistem CCTV, perbaikan printer, serta konfigurasi dasar jaringan Mikrotik. Saya memiliki semangat tinggi dalam memecahkan masalah teknis dan selalu berusaha memberikan hasil terbaik untuk setiap klien.
+                </p>
+                <span class="more-text" id="moreText" hidden>
+                    Dengan pengalaman lintas bidang teknologi, kami menyediakan layanan maintenance dan monitoring sistem CCTV, perawatan printer, serta konfigurasi jaringan Mikrotik. Kami memastikan setiap perangkat bekerja optimal dan aman, sehingga mendukung kelancaran operasional bisnis Anda—dari skala kecil hingga menengah. Kami berfokus pada hasil yang terukur, respons cepat, dan layanan berbasis kebutuhan pengguna (user-centered service).
+                </span>
+                <button id="aboutToggle" class="link-btn" aria-expanded="false">Baca selengkapnya</button>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Keahlian</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>CCTV Maintenance dan Monitoring</h3>
+                        <p>Pemasangan, perawatan, dan konfigurasi serta monitoring real time sistem CCTV baik analog maupun IP.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Maintenance Printer</h3>
+                        <p>Perbaikan, kalibrasi, dan perawatan printer dari berbagai merek.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Konfigurasi Mikrotik</h3>
+                        <p>Konfigurasi dasar router Mikrotik, pengaturan jaringan, dan manajemen bandwidth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section section">
+            <div class="container">
+                <h2>Portfolio & Bukti Keahlian</h2>
+                <p>Berikut beberapa dokumentasi hasil pekerjaan saya di bidang maintenance dan jaringan.</p>
+                <div class="portfolio-gallery">
+                    <div class="portfolio-item">
+                        <img src="foto/cctv.jpg" alt="Maintenance dan Monitoring CCTV">
+                        <h3>Maintenance dan Monitoring CCTV</h3>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="foto/printer.jpg" alt="Perbaikan Printer">
+                        <h3>Perbaikan Printer</h3>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="foto/mikrotik.jpg" alt="Konfigurasi Mikrotik">
+                        <h3>Konfigurasi Mikrotik</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="testimonials section">
+            <div class="container">
+                <h2>Ulasan Pelanggan</h2>
+
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <div class="review-head">
+                            <img class="avatar" src="https://i.pravatar.cc/60?img=32" alt="Avatar" />
+                            <div class="meta">
+                                <strong>Ceu Ijah</strong>
+                                <span>10 menit yang lalu</span>
+                            </div>
+                            <span class="g-badge" aria-label="Google review">G</span>
+                        </div>
+                        <div class="stars" aria-label="5 dari 5">★★★★★</div>
+                        <p class="review-text">Pelayanan sangat memuaskan! Tim responsif dan profesional dalam menangani masalah CCTV saya. Hasilnya sangat memuaskan dan sesuai harapan.</p>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-head">
+                            <img class="avatar" src="https://i.pravatar.cc/60?img=12" alt="Avatar" />
+                            <div class="meta">
+                                <strong>Mang Zek</strong>
+                                <span>10 menit yang lalu</span>
+                            </div>
+                            <span class="g-badge" aria-label="Google review">G</span>
+                        </div>
+                        <div class="stars" aria-label="5 dari 5">★★★★★</div>
+                        <p class="review-text">Desain yang diberikan sangat sesuai harapan dan mudah digunakan oleh pengguna kami. Sangat direkomendasikan!</p>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-head">
+                            <img class="avatar" src="https://i.pravatar.cc/60?img=5" alt="Avatar" />
+                            <div class="meta">
+                                <strong>Bu Haji Lilis</strong>
+                                <span>10 menit yang lalu</span>
+                            </div>
+                            <span class="g-badge" aria-label="Google review">G</span>
+                        </div>
+                        <div class="stars" aria-label="5 dari 5">★★★★★</div>
+                        <p class="review-text">Proses pengerjaan cepat, komunikasi jelas, dan hasilnya memuaskan. Printer yang rusak sudah berfungsi normal kembali. Terima kasih!</p>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-head">
+                            <img class="avatar" src="https://i.pravatar.cc/60?img=21" alt="Avatar" />
+                            <div class="meta">
+                                <strong>Bi Tati</strong>
+                                <span>10 menit yang lalu</span>
+                            </div>
+                            <span class="g-badge" aria-label="Google review">G</span>
+                        </div>
+                        <div class="stars" aria-label="5 dari 5">★★★★★</div>
+                        <p class="review-text">Konfigurasi jaringan Mikrotik dilakukan dengan sangat baik. Internet di kantor sekarang lebih stabil dan cepat. Recommended!</p>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-head">
+                            <img class="avatar" src="https://i.pravatar.cc/60?img=48" alt="Avatar" />
+                            <div class="meta">
+                                <strong>Bu Guru Salsa</strong>
+                                <span>10 menit yang lalu</span>
+                            </div>
+                            <span class="g-badge" aria-label="Google review">G</span>
+                        </div>
+                        <div class="stars" aria-label="5 dari 5">★★★★★</div>
+                        <p class="review-text">Sistem CCTV yang dipasang bekerja sempurna. Monitoring real-time sangat membantu keamanan. Pelayanan sangat profesional!</p>
+                    </article>
+
+                    <article class="review-card">
+                        <div class="review-head">
+                            <img class="avatar" src="https://i.pravatar.cc/60?img=34" alt="Avatar" />
+                            <div class="meta">
+                                <strong>Bu Iin</strong>
+                                <span>10 menit yang lalu</span>
+                            </div>
+                            <span class="g-badge" aria-label="Google review">G</span>
+                        </div>
+                        <div class="stars" aria-label="5 dari 5">★★★★★</div>
+                        <p class="review-text">Maintenance printer dilakukan tepat waktu dan hasilnya bagus. Harga terjangkau dengan kualitas pelayanan yang baik.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2>Hubungi Kami</h2>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Nama" required />
+                    <input type="email" name="email" placeholder="Email" required />
+                    <textarea name="message" placeholder="Pesan Anda..." rows="4" required></textarea>
+                    <button type="submit" class="btn">Kirim Pesan</button>
+                </form>
+                <p id="form-status" aria-live="polite"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section about">
+                <h3>Tentang Kami</h3>
+                <p>Kami membantu bisnis Anda tumbuh melalui solusi digital modern dan strategi inovatif.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#testimonials">Review</a></li>
+                    <li><a href="#portfolio">portofolio</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Kontak</h3>
+                <p>Email: octavianramadhan110@gmail.com</p>
+                <p>Telepon: +628997252154</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 MyWeb. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+    <button id="scrollTopBtn" title="Kembali ke atas">↑</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
